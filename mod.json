@@ -1,0 +1,45 @@
+{
+  "geode": "4.0.0",
+  "gd": {
+    "win": "2.2081"
+  },
+  "version": "v1.0.0",
+  "id": "terry.trajectory",
+  "name": "Trajectory",
+  "developer": "Terry",
+  "description": "Predicts and displays jump (blue) and fall (red) trajectories in real-time.",
+  "settings": {
+    "enabled": {
+      "name": "Enabled",
+      "description": "Show the predictive trajectory line",
+      "type": "bool",
+      "default": true
+    },
+    "trajectory-length": {
+      "name": "Prediction Length (Ticks)",
+      "description": "How many frames/ticks into the future to predict",
+      "type": "int",
+      "default": 180,
+      "min": 10,
+      "max": 600
+    },
+    "line-thickness": {
+      "name": "Line Thickness",
+      "description": "Thickness of the trajectory lines",
+      "type": "float",
+      "default": 1.5,
+      "min": 0.5,
+      "max": 5.0
+    },
+    "color-jump": {
+      "name": "Jump Trajectory Color (Holding)",
+      "type": "color",
+      "default": "#3399FF"
+    },
+    "color-fall": {
+      "name": "Fall Trajectory Color (Release)",
+      "type": "color",
+      "default": "#FF3333"
+    }
+  }
+}
